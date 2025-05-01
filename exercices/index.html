@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="../public/imgs/logo.png">
+    <title>Exercices</title>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <ul>
+            <li><a href="../main.html">Home</a></li>
+            <li><a href="#">Exercices</a></li>
+            <li><a id="contribute" href="#">Contribute</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Theme</a>
+              <div class="dropdown-content">
+                <select>
+                <option value="light">Lightmode</option>
+                <option value="dark">Darkmode</option>
+            </select>
+              </div>
+            </li>
+            <li>   
+            </li>
+          </ul>
+        </div>
+          <!-- Header -->
+        <header>
+            <div class="logo">
+                <img draggable="false" src="../public/imgs/terminal.png" alt="terminal">
+                <h2>DevDrills</h2>
+            </div>
+        </header>
+        <!-- Main Container -->
+         <div id="main-container">
+            <!-- Select Language -->
+             <aside style="float: right;">
+                <button id="Btnpython"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="py">Python</button>
+                <button id="Btncpp" style="margin-top: 20px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="cpp">C++</button>
+                <button id="Btnjava" style="margin-top: 20px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="java">Java</button>
+                <button id="Btnrust" style="margin-top: 20px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="rs">Rust</button>
+             </aside>
+             <!-- Exercices -->
+            <div id="python">
+                <h2>Python Exercices</h2>
+                <h4>Exercise 1</h4>
+                <p>Create a var called "name" and make it print your name</p>
+                <p id="code1py" class="hidden"><code>name = "iker" <br> print(name)</code></p>
+                <button id="solu1">Solution</button>
+                <h4>Exercise 2</h4>
+                <p>Create an "age" variable and make it print your age</p>
+                <p id="code2py" class="hidden"><code>age = 18 <br> print(age)</code></p>
+                <button id="solu2">Solution</button>
+                <h4>Exercise 3</h4>
+                <p>Use both var to print this message "Hi, I'm "name" and i'm "age" years old</p>
+                <p id="code3py" class="hidden"><code>print(f'Hi, I'm {name} and i'm {age} years old')</code></p>
+                <button id="solu3">Solution</button>
+                <h4>Exercise 4</h4>
+                <p>Create a list called "Fruits" and add 4 fruits</p>
+                <p id="code4py" class="hidden"><code>fruits = ["apple", "banana", "cherry", "orange"]</code></p>
+                <button id="solu4">Solution</button>
+                <h4>Exercise 5</h4>
+                <p>Print the second element of the list</p>
+                <p id="code5py" class="hidden"><code>print(fruits[1])</code></p>
+                <button id="solu5">Solution</button>
+            </div>
+
+            <div id="cpp" class="hidden">
+              <h2>C++ Exercices</h2>
+              <h4>Exercise 1</h4>
+              <p>Print "Hello World"</p>
+              <p id="code1cpp" class="hidden"><code>#include iostream (with <>) <br> using namespace std; <br> int main(){ <br> std::cout << "Hello world" << endl; <br> return 0;  <br>} </code></p>
+              <button id="solu1cpp">Solution</button>
+              <h4>Exercise 2</h4>
+              <p>Make a simple calculator that only adds</p>
+              <p id="code2cpp" class="hidden"><code>#include iostream (with <>) <br> using namespace std; <br> int main() { <br> int num1, num2, result; <br> cout << "Introuce num1; " << endl; <br> cin >> num1; <br>
+              cout << "Introuce num2: " << endl; <br> cin >> num2; <br> result = num1 + num2; <br> std::cout << "The result is:"<< result << endl; <br> return 0; <br>}</code></p>
+              <button id="solu2cpp">Solution</button>
+              <h4>Exercise 3</h4>
+              <p>Make a triangular pattern that contains "*" and the user can decide the number of lines</p>
+              <p id="code3cpp" class="hidden"><code>#include iostream (with <>) <br> using namespace std; <br> void patter(){ <br> int num, i, j; <br> cout << "Enter a number from 1 to 10: " << endl; <br> 
+              cin >> num; <br> for(i=1;i<=num;i++){ <br> for(j=1;j<=i;j++){ <br> cout << "*";} <br> cout << "\n";} <br>} <br><br> int main(){ <br> pattern() <br> return 0; <br>}</code></p>
+              <button id="solu3cpp">Solution</button>
+              <h4>Exercise 4</h4>
+              <p>Make a pattern that contains "*" but starts from 10. <br> It needs to start from 1</p>
+              <p id="code4cpp" class="hidden"><code>#include iostream (with <>) <br> using namespace std; <br> void pattern(){ <br> int i, j, j; <br> for(i=10;i>=1;i--){ <br> for(j=1;j<=i;j--){ <br> cout << "* "; <br>} <br> cout << "\n";<br>} <br>}
+              <br><br>int main(){ <br> pattern(); <br> return 0; <br>}</code></p>
+              <button id="solu4cpp">Solution</button>
+              <h4>Exercise 5</h4>
+              <p>Make a complete triangular pattern that starts from 1</p>
+              <p id="code5cpp" class="hidden"><code>#include iostream (with <>) <br> using namespace std; <br> void pattern(){ <br> int n, i, j, s; <br> n=10; <br>for(i=1;i<=n;i++){ <br> for(s=i;s < n;s++){ <br>
+              cout << " "; <br>} for(j=1;j<=(2*i-1);j++){ <br> cout << "*"; <br>} cout << "\n";}<br>} <br> int main(){ <br> pattern(); <br> return 0; <br>}</code></p>
+              <button id="solu5cpp">Solution</button>
+            </div>
+
+            <div id="java" class="hidden">
+              <h3>Java Exercises</h3>
+              <h4>Exercise 1</h4>
+              <p>Read a Number and print it's square</p>
+              <p id="code1java" class="hidden"><code>
+                import java.io.*; 
+                <br>
+                public class Exercise1 { 
+                  <br>
+                    public static void main(String[] args) throws IOException {
+                      <br>  
+                      InputStreamReader inputReader = new InputStreamReader(System.in);
+                      <br> 
+                      BufferedReader reader = new BufferedReader(inputReader);
+                      <br>  
+                      float numero;
+                      <br>
+                        do {
+                          <br>
+                            System.out.print("Input a number: ");
+                            <br>
+                            numero = Float.parseFloat(reader.readLine());
+                            <br>
+                            if (numero > 0)
+                            <br>
+                            System.out.printf("[ %.3f ] it's square is [ %.3f ]\n", (numero), (float)(Math.pow(numero, 2)));
+                            <br>
+                          }
+                          <br>
+                          while (numero >= 0);
+                          <br>
+                        }
+                }</code></p>
+                <button id="solu1java">Solution</button>
+                <h4>Exercise 2</h4>
+                <p>Ask for a number and show if it's odd or even</p>
+                <p id="code2java" class="hidden"><code>
+                  import java.io.*;
+                  <br>
+                  public class Ejercicio2 {
+                    <br>  
+                    public static void main(String[] args) throws IOException {
+                      <br>  
+                      InputStreamReader inputReader = new InputStreamReader(System.in);
+                      <br>    
+                      BufferedReader reader = new BufferedReader(inputReader);
+                      <br>    
+                      int numero;
+                      <br>
+                          do {
+                            <br>
+                              System.out.print("Input a number: ");
+                              <br>
+                              numero = Integer.parseInt(reader.readLine());
+                              <br>
+                              System.out.println("The number " + numero + (numero % 2 == 0 ? " is even" : " is odd") + "\n");
+                              <br>
+                            }
+                            <br>
+                          while (numero != 0);
+                          <br>
+                        }
+                  }
+                </code></p>
+                <button id="solu2java">Solution</button>
+                <h4>Exercise 3</h4>
+                <p>Ask for a number and show all the numbers from 1 to N</p>
+                <p id="code3java" class="hidden"><code>
+                  import java.io.*;
+                  <br>
+                  public class Ejercicio4 {
+                    <br>
+                      public static void main(String[] args) throws IOException {
+                        <br>
+                        InputStreamReader inputReader = new InputStreamReader(System.in);
+                        <br>  
+                        BufferedReader reader = new BufferedReader(inputReader);
+                        <br>  
+                        int numero;
+                        <br>
+                          System.out.print("Input a number: ");
+                          <br>
+                          numero = Integer.parseInt(reader.readLine());
+                          <br>
+                          for (int i = 1; i <= numero; ++i) {
+                            <br>
+                              System.out.print(i + (i < numero ? " " : ""));
+                              <br>
+                            }
+                            <br>
+                          }
+                  }
+                </code></p>
+                <button id="solu3java">Solution</button>
+              </div>
+            
+            <div id="rust">
+              <h4>Exercise 1</h4>
+              <p>Print "Hello World"</p>
+              <p id="code1rust" class="hidden"><code>
+                use std::io;
+                <br>
+                fn main(){
+                  <br>
+                  println!("Hello World");
+                  <br>
+                }
+              </code></p>
+              <button id="solu1rust">Solution</button>
+            </div>
+      </div>
+    
+</body>
+<script src="script/exercices.js"></script>
+</html>
